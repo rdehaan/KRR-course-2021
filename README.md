@@ -27,3 +27,6 @@ We will do (roughly) the following in the four weeks:
   - Some additional theoretical aspects of ASP
   - Preparing for the final exam
   - The final exam
+
+## Overview of materials
+- [Pointers to reading and additional video material](study-materials.md)
