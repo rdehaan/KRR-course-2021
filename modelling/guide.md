@@ -40,6 +40,7 @@ The main questions to consider and answer in this step are:
 - What predicates to use to represent candidate solutions? What arity do they have?
 - What rules/constraints to add to your program so that the answer sets of the program correspond to (all) candidate solutions?
 - Do you need any auxiliary predicates/rules/constraints to express some properties that candidate solutions should have?
+- How to obtain from any answer set the corresponding candidate solution?
 
 ## 4. Establish encoding of solution properties (*test*)
 
