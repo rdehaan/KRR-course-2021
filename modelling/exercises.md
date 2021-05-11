@@ -8,6 +8,8 @@ For each problem, the difficulty of modelling it using ASP is indicated using on
 
 The problem descriptions below both indicate what is the input for the problem, what kind of object the solutions are and what kind of properties the solutions should have. The goal, for each exercise, is to construct an answer set program *P* such that the (optimal) answer sets of *P* correspond to the solutions of the problem&mdash;and to describe how one can extract solutions from the (optimal) answer sets.
 
+*Tip:* To check your solution, construct an example input, and check if the (optimal) answer sets for your program correspond to correct solutions for this input.
+
 ## A. Graph problems
 
 ### A.1. Dominating set (&star;)
@@ -109,10 +111,17 @@ and a positive integer *k*.
 
 *Solutions:* a [Kripke structure](https://en.wikipedia.org/wiki/Modal_logic#Relational_semantics) *M* containing at most *k* states and a state *w* in *M* such that *M,w* &models; &varphi;.
 
-<!--
-## Scheduling problems
-- job-shop scheduling
+## C. Scheduling problems
 
+### C.1. Job shop scheduling (&star;&star;)
+
+Take a variant of the [job shop scheduling](https://en.wikipedia.org/wiki/Job_shop_scheduling) problem (e.g., with or without precedence constraints), and find solutions of minimum [makespan](https://en.wikipedia.org/wiki/Makespan).
+
+### C.2. Open shop scheduling (&star;&star;)
+
+Take a variant of the [open shop scheduling](https://en.wikipedia.org/wiki/Open-shop_scheduling) problem, and find solutions of minimum [makespan](https://en.wikipedia.org/wiki/Makespan).
+
+<!--
 ## Problems related to games
 - chess position legal after k moves
 - Slitherlink
