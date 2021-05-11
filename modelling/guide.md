@@ -1,4 +1,4 @@
-## Guide for modelling and solving problems
+# Guide for modelling and solving problems
 
 This guide highlights the main steps to take when modelling and solving a problem using ASP.
 
