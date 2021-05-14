@@ -7,7 +7,7 @@ In the most recent version of clingo, a slightly different syntax is used from w
 In choice rules, use `;` instead of `,`.
 For example:
 
-```prolog
+```
 at(grocery).
 
 % OLD SYNTAX: { buy(pizza), buy(wine), buy(corn) } :- at(grocery).
@@ -17,7 +17,7 @@ at(grocery).
 In cardinality rules, use `;` instead of `,`.
 For example:
 
-```prolog
+```
 pass(a1;a2).
 
 % OLD SYNTAX: pass(c42) :- 2 { pass(a1),  pass(a2), pass(a3) }.
@@ -27,7 +27,7 @@ pass(c42) :- 2 { pass(a1);  pass(a2); pass(a3) }.
 Generally, use `,` to separate several parts inside a single conditional literal, and use `;` to separate different elements within a set (e.g., literals, conditional literals, tuples). And if there is no possible confusion, you may replace `;` by `,`.
 For example:
 
-```prolog
+```
 vertex(42).
 color(1;2;3).
 good(1;2;3).
@@ -44,7 +44,7 @@ all4(V) :- use(V,1), use(V,2); use(V,3), vertex(V).
 In aggregates, use `:` instead of `=`, and use `;` instead of `,`.
 For example:
 
-```prolog
+```
 % OLD SYNTAX: 10 { course(db)=4, course(ai)=6, course(project)=8, course(xml)=3 } 20.
 10 #sum { 4 : course(db); 6 : course(ai); 8 : course(project); 3 : course(xml) } 20.
 ```
@@ -53,7 +53,7 @@ For example:
 
 In optimization statements, use `{` and `}` instead of `[` and `]`, use `:` instead of `=`.
 
-```prolog
+```
 number(1;2;3;4).
 2 { hd(X) : number(X) } 2.
 
@@ -66,7 +66,7 @@ number(1;2;3;4).
 When specifying disjunction in the head of rules, use `;` instead of `|`.
 (In this case, the old syntax still works as well.)
 
-```prolog
+```
 vertex(42).
 
 % OLD SYNTAX (STILL WORKS): color(42,red) | color(42,green) | color(42,blue) :- vertex(42).
@@ -77,7 +77,7 @@ color(42,red) ; color(42,green) ; color(42,blue) :- vertex(42).
 
 To selectively show only some predicates in the answer sets, you don't need to use `#hide.` anymore before selective `#show` statements (such as `#show color/1.`).
 
-```prolog
+```
 number(1;2;3;4).
 color(red;green;blue).
 
