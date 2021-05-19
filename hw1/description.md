@@ -70,6 +70,8 @@ assign points for considering all different situations: statements like this in 
 
 ## Exercise 3: Modelling road repair scheduling
 
+**NOTE:** This description of this exercise is not yet worked out fully.
+
 - Description of general problem
 - (a): specify formal problem (directed, weighted, labelled graph); and give example of instance (strongly connected map with at least 10 roads, at least 5 repair request of different durations, and at least 3 different tools)
 - (b): model basic variant of the problem (do all repairs in minimal amount of time, with durations of repairs and available tools)
