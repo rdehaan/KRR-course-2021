@@ -4,7 +4,7 @@ This repository contains (pointers to) material for the 2021 edition of the cour
 ## Other places for this course:
 - [Course page on Datanose](https://datanose.nl/#course[89408])
 - [Course page on Canvas](https://canvas.uva.nl/courses/21424)
-- [Discourse board for the course](TODO)
+- [Discourse board for the course](https://talk.computational-complexity.nl/)
 
 ## Course outline
 The main learning goal of the course is to understand the theory and practice of *Answer Set Programming (ASP)*, and to learn how to use ASP to solve problems that have a combinatorial aspect to them.
