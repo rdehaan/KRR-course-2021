@@ -166,3 +166,17 @@ If you were the prisoner, which door would you open?
 *The prisoner studied the situation for a long while. "The problem is unsolvable!" he exclaimed angrily. "That's not fair!" "I know," laughed the king. "Very funny!" replied the prisoner. "Come on, now, at least give me a decent clue: is Room Eight empty or not?" The king was decent enough to tell him whether Room VIII was empty or not, and the prisoner was then able to deduce where the [chocolate] was.*
 
 Which room contained the chocolate?
+
+## D. River crossing puzzles
+
+[River crossing](https://en.wikipedia.org/wiki/River_crossing_puzzle) puzzles are logic puzzles, where the goal is to get a set of people/items across a river with a minimum number of crossings (or in a minimum amount of time), subject to some constraints on the allowed (combinations of) crossings.
+
+Model the following river crossing puzzles in ASP, and find the optimal solution(s).
+
+### D.1. Missionaries and cannibals
+
+Solve the [Missionaries and cannibals problem](https://en.wikipedia.org/wiki/Missionaries_and_cannibals_problem).
+
+### D.2. Bridge and torch
+
+Solve the [Bridge and torch problem](https://en.wikipedia.org/wiki/Bridge_and_torch_problem).
