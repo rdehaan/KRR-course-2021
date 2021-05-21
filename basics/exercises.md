@@ -249,7 +249,7 @@ There are five houses of five different colors. In each house lives a person of 
 - The British person lives in the red house.
 - The Swedish person keeps a dog.
 - The Danish person drinks tea.
-- The green house is on the left of the white house.
+- The green house is (directly) on the left of the white house.
 - The owner of the green house drinks coffee.
 - The person who smokes Pall Mall rears birds.
 - The owner of the yellow house smokes Dunhill.
