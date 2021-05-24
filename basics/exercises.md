@@ -229,11 +229,15 @@ Which room contained the chocolate?
 
 Model the following river crossing puzzles in ASP, and find the optimal solution(s).
 
-### E.1. Missionaries and cannibals
+### E.1. The wolf, the goat and the cabbage
+
+Solve the [wolf, goat and cabbage problem](https://en.wikipedia.org/wiki/Wolf,_goat_and_cabbage_problem).
+
+### E.2. Missionaries and cannibals
 
 Solve the [Missionaries and cannibals problem](https://en.wikipedia.org/wiki/Missionaries_and_cannibals_problem).
 
-### E.2. Bridge and torch
+### E.3. Bridge and torch
 
 Solve the [Bridge and torch problem](https://en.wikipedia.org/wiki/Bridge_and_torch_problem).
 
