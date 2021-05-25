@@ -71,6 +71,34 @@ good(1;2).
 perfect :- good(I) : item(I).
 ```
 
+### A.8.
+
+```
+item(a;b;c).
+number(1;2;3).
+
+1 { assign(I,N) : number(N) } 1 :- item(I).
+1 { assign(I,N) : item(I) } 1 :- number(N).
+```
+
+### A.9.
+
+```
+item(a;b;c).
+number(1;2;3).
+
+1 { assign(I,N) : item(I) } 1 :- number(N).
+```
+
+### A.10.
+
+```
+item(a;b;c).
+number(1;2;3).
+
+1 { assign(I,N) : number(N) } 1 :- item(I).
+```
+
 ## B. Some puzzles
 
 Solve the following puzzles.
