@@ -314,6 +314,8 @@ For instance:
 
 What letter can replace the question mark if we fill the grid so that each letter is used once in each row, each column, and each of the two diagonals?
 
+(In other words, this is a [Latin square](https://en.wikipedia.org/wiki/Latin_square), and the question is what should replace the question mark in the solution.)
+
 ### F.4. Packing Squares into a Rectangle
 
 Pack a given set of squares into a given rectangular area without overlaps.
