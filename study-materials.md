@@ -13,12 +13,15 @@ using the modern ASP solving system [clingo](https://potassco.org/clingo/).
 - **[Gebser, Kaminski, Kaufmann, Schaub, 2012]**: Martin Gebser, Roland Kaminski, Benjamin Kaufmann, and Torsten Schaub. [*Answer Set Solving in Practice*](https://potassco.org/book/), Morgan & Claypool, 2012.
 <a name="guide"></a>
 - **[Potassco Guide]**: Martin Gebser, Roland Kaminski, Benjamin Kaufmann, Marius Lindauer, Max Ostrowski, Javier Romero, Torsten Schaub, Sven Thiele, and Philipp Wanko. [*Potassco User Guide v2.2.0*](https://github.com/potassco/guide/releases/download/v2.2.0/guide.pdf), 2019.
+<a name="aima"></a>
+- **[Russell, Norvig, 2016]**: Stuart Russell, and Peter Norvig. [*Artificial Intelligence: A Modern Approach (3rd Ed.)*](http://aima.cs.berkeley.edu/), Prentice Hall, 2016.
 
 ### Relevant reading, per week:
 - Week 1:
   - Chapters 1 and 2 of [[Gebser, Kaminski, Kaufmann, Schaub, 2012]](#assip).
   - Chapters 1, 2 and 3 of the [[Potassco Guide]](#guide). &ndash; for reference (e.g., for the right syntax).
     - Except for Sections 3.1.14 and 3.2
+  - Sections 6.1&ndash;6.3, 7.4 and 7.6.1 of [[Russell, Norvig, 2016]](#aima).
 - Week 2:
   - Chapter 3 of [[Gebser, Kaminski, Kaufmann, Schaub, 2012]](#assip).
   - Chapter 6 of the [[Potassco Guide]](#guide) &ndash; for reference (e.g., for the right syntax).
