@@ -105,7 +105,7 @@ Solve the following puzzles.
 
 ### B.1. Dreadsbury Mansion Murder Mystery
 
-*Someone in Dreadsbury Mansion killed Aunt Agatha. Agatha, the butler, and Charles live in Dreadsbury Mansion, and are the only ones to live there. A killer always hates, and is no richer than his victim. Charles hates noone that Agatha hates. Agatha hates everybody except the butler. The butler hates everyone not richer than Aunt Agatha. The butler hates everyone whom Agatha hates. Noone hates everyone. Who killed Agatha?*
+*Someone in Dreadsbury Mansion killed Aunt Agatha. Agatha, the butler, and Charles live in Dreadsbury Mansion, and are the only ones to live there. A killer always hates, and is no richer than his victim. Charles hates no one that Agatha hates. Agatha hates everybody except the butler. The butler hates everyone not richer than Aunt Agatha. The butler hates everyone whom Agatha hates. No one hates everyone. Who killed Agatha?*
 
 (From the paper [Seventy-Five Problems for Testing Automatic Theorem Provers](https://link.springer.com/content/pdf/10.1007/BF02432151.pdf) by Pelletier (1986).)
 
