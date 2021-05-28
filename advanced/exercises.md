@@ -2,7 +2,15 @@
 
 This is a list of problems that you can use for practicing advanced techniques for modelling and solving a problem using ASP.
 
-## A. 'No solution' variants of the basic modelling exercises
+## A.
+
+### A.1. Tree decompositions
+
+*Input:* an undirected graph *G = (V,E)*.
+
+*Solution:* a [tree decomposition](https://en.wikipedia.org/wiki/Tree_decomposition) of *G* of minimal width.
+
+## B. 'No solution' variants of the basic modelling exercises
 
 For the problems in the [(basic) modelling exercises](../modelling/exercises.md), you can consider 'no solution' variants. For example, for the problem of dominating set, you can consider the following variant:
 
@@ -12,21 +20,21 @@ For the problems in the [(basic) modelling exercises](../modelling/exercises.md)
 
 Solve these 'no solution' variants of the problems using the technique of saturation.
 
-## B. Further saturation exercises
+## C. Further saturation exercises
 
-### B.1. &exist;&forall;-QBF
+### C.1. &exist;&forall;-QBF
 
 *Input:* a [quantified Boolean formula](https://en.wikipedia.org/wiki/True_quantified_Boolean_formula) &varphi; with an &exist;&forall; quantifier prefix.
 
 *Solutions:* truth assignments &alpha; to the existentially quantified variables such that &varphi;[&alpha;] is true for every truth assignment to the universally quantified variables.
 
-### B.2. Entailed clauses
+### C.2. Entailed clauses
 
 *Input:* a [propositional logic CNF formula](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) &varphi;.
 
 *Solutions:* clauses *c* over the variables in &varphi; such that *c* is logically entailed by &varphi; (i.e., &varphi; &models; *c*).
 
-### B.3. 3-Coloring extension
+### C.3. 3-Coloring extension
 
 *Input:* an undirected graph *G = (V,E)*.
 
