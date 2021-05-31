@@ -22,6 +22,7 @@ using the modern ASP solving system [clingo](https://potassco.org/clingo/).
   - Chapters 1, 2 and 3 of the [[Potassco Guide]](#guide). &ndash; for reference (e.g., for the right syntax).
     - Except for Sections 3.1.14 and 3.2
   - Sections 6.1&ndash;6.3, 7.4 and 7.6.1 of [[Russell, Norvig, 2016]](#aima).
+  - Sections A.1 of [[Russell, Norvig, 2016]](#aima).
 - Week 2:
   - Chapter 3 of [[Gebser, Kaminski, Kaufmann, Schaub, 2012]](#assip).
   - Chapter 6 of the [[Potassco Guide]](#guide) &ndash; for reference (e.g., for the right syntax).
