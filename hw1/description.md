@@ -60,7 +60,7 @@ Show how to translate any answer set program *P* that uses these hypothetical st
 Show how to translate any answer set program *P* that uses these hypothetical statements with `#even` and `#odd` to an equivalent answer set program *P'* (that is, *P* and *P'* have exactly the same answer sets when restricted to the predicates that appear in *P*) **without** using aggregates&mdash;only using normal rules (you may use first-order variables).
 
 #### Note:
-For both assignments (a) and (b), you may show concretely how the translation can be done for the following answer set program *P<sub>0</sub>* (for different values of the constant `t`), and then explain how your solution for *P<sub>0</sub>* can be used in arbitrary answer set programs.
+For both assignments (a) and (b), you may show concretely how the translation can be done for the following answer set program *P<sub>0</sub>* (for different values of the constant `t`), and then explain how your solution for *P<sub>0</sub>* can be used (in modified form) to translate arbitrary answer set programs with `#even` and `#odd` (in the body of rules) to equivalent programs without these statements.
 ```
 #const t=10.
 num(1..t).
