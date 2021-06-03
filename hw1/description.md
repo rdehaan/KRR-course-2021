@@ -36,6 +36,8 @@ In this exercise, you will show how adding (hypothetical) language constructs ab
 
 In particular, consider the following hypothetical language constructs `#even` and `#odd`. Both are to be followed by a set of literals, and are true if and only if the number of literals in this set that is true is even or odd, respectively.
 
+For the sake of simplicity, you may assume that statements with these hypothetical constructs `#even` and `#odd` only appear in the body (i.e., the right-hand side) of rules.
+
 For example, the following (hypothetical) answer set program would have an answer set:
 ```
 vertex(1;2).
@@ -43,7 +45,7 @@ color(red;green;blue).
 use(1,red).
 use(2,red).
 
-#even { use(V,red) : vertex(V), use(V,red) }.
+:- not #even { use(V,red) : vertex(V), use(V,red) }.
 ```
 And the following (hypothetical) answer set program would not have an answer set:
 ```
@@ -52,7 +54,7 @@ color(red;green;blue).
 use(1,red).
 use(2,green).
 
-#even { use(V,red) : vertex(V), use(V,red) }.
+:- not #even { use(V,red) : vertex(V), use(V,red) }.
 ```
 
 #### Assignment (a):
