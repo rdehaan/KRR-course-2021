@@ -42,7 +42,7 @@ num(1..10).
 a(1..4).
 #show a/1.
 
-:- not #even { a(X) : num(X) }.
+:- not #even { a(X) : a(X), num(X) }.
 ```
 And the following (hypothetical) answer set program would not have an answer set:
 ```
@@ -50,7 +50,7 @@ num(1..10).
 a(1..3).
 #show a/1.
 
-:- not #even { a(X) : num(X) }.
+:- not #even { a(X) : a(X), num(X) }.
 ```
 
 #### Assignment (a):
@@ -67,7 +67,7 @@ num(1..t).
 { a(X) : num(X) }.
 #show a/1.
 
-:- not #even { a(X) : num(X) }.
+:- not #even { a(X) : a(X), num(X) }.
 ```
 
 #### Note:
