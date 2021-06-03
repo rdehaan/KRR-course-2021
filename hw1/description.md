@@ -43,7 +43,7 @@ color(red;green;blue).
 use(1,red).
 use(2,red).
 
-#even { use(V,red) : vertex(V) }.
+#even { use(V,red) : vertex(V), use(V,red) }.
 ```
 And the following (hypothetical) answer set program would not have an answer set:
 ```
@@ -52,7 +52,7 @@ color(red;green;blue).
 use(1,red).
 use(2,green).
 
-#even { use(V,red) : vertex(V) }.
+#even { use(V,red) : vertex(V), use(V,red) }.
 ```
 
 #### Assignment (a):
