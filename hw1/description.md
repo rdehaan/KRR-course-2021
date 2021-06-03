@@ -34,27 +34,23 @@ In your answer, include the following:
 
 In this exercise, you will show how adding (hypothetical) language constructs about the parity of sets does not increase the expressivity of the language of answer set programming.
 
-In particular, consider the following hypothetical language constructs `#even` and `#odd`. Both are to be followed by a set of literals, and are true if and only if the number of literals in this set that is true is even or odd, respectively.
-
-For the sake of simplicity, you may assume that statements with these hypothetical constructs `#even` and `#odd` only appear in the body (i.e., the right-hand side) of rules.
+In particular, consider the following hypothetical language constructs `#even` and `#odd`. Both are to be followed by a set of literals, and are true if and only if the number of literals in this set that is true is even or odd, respectively. For the sake of simplicity, you may assume that statements with these hypothetical constructs `#even` and `#odd` only appear in the body (i.e., the right-hand side) of rules.
 
 For example, the following (hypothetical) answer set program would have an answer set:
 ```
-vertex(1;2).
-color(red;green;blue).
-use(1,red).
-use(2,red).
+num(1..10).
+a(1..4).
+#show a/1.
 
-:- not #even { use(V,red) : vertex(V), use(V,red) }.
+:- not #even { a(X) : num(X) }.
 ```
 And the following (hypothetical) answer set program would not have an answer set:
 ```
-vertex(1;2).
-color(red;green;blue).
-use(1,red).
-use(2,green).
+num(1..10).
+a(1..3).
+#show a/1.
 
-:- not #even { use(V,red) : vertex(V), use(V,red) }.
+:- not #even { a(X) : num(X) }.
 ```
 
 #### Assignment (a):
@@ -62,6 +58,17 @@ Show how to translate any answer set program *P* that uses these hypothetical st
 
 #### Assignment (b):
 Show how to translate any answer set program *P* that uses these hypothetical statements with `#even` and `#odd` to an equivalent answer set program *P'* (that is, *P* and *P'* have exactly the same answer sets when restricted to the predicates that appear in *P*) **without** using aggregates&mdash;only using normal rules (you may use first-order variables).
+
+#### Note:
+For both assignments (a) and (b), you may show concretely how the translation can be done for the following answer set program *P<sub>0</sub>* (for different values of the constant `t`), and then explain how your solution for *P<sub>0</sub>* can be used in arbitrary answer set programs.
+```
+#const t=10.
+num(1..t).
+{ a(X) : num(X) }.
+#show a/1.
+
+:- not #even { a(X) : num(X) }.
+```
 
 #### Note:
 When translating *P* to *P'*, you may introduce additional predicates. The equivalence between *P* and *P'* is measured only with respect to the predicates appearing in *P*. In other words, if we were to add (both to *P* and *P'*) a `#show` statement for each predicate appearing in *P*, clingo would show exactly the same answer sets.
