@@ -341,15 +341,64 @@ Write a program that solves Hitori puzzles.
 To test your program, run it on the example from
 [the Wikipedia article on Hitori](https://en.wikipedia.org/wiki/Hitori).
 
-<!--
-Other ideas:
+# Selected solutions
 
-Knight's Tour: https://ibmathsresources.com/2013/11/19/knights-tour/
+Here are some solutions to some of the puzzles.
+You can use these to check your solutions.
 
-http://www.hakank.org/answer_set_programming/who_killed_agatha.lp
-http://www.hakank.org/answer_set_programming/mr_smith.lp
-http://www.hakank.org/answer_set_programming/marathon2.lp
-http://www.hakank.org/answer_set_programming/safe_cracking.lp
-http://www.amagicclassroom.com/uploads/3/4/5/2/34528828/alphametics.pdf
+We phrase these solutions deliberately not in terms of answer sets.
+This is because there are typically multiple ways of modelling the problem
+in ASP, giving differently phrased (and sometimes even a different number of)
+answer sets.
+So use these solutions as follows: conclude from the answer sets for your
+program what the answer to the riddle/puzzle should be, and check here whether
+this solution matches the solution given here.
 
--->
+## B.1.
+
+Agatha killed Agatha.
+
+## B.2.
+
+John and Tim go.
+
+## B.3.
+
+1. Ignace
+2. Dominique
+3. Pascal
+4. Philippe
+5. Olivier
+6. Naren
+
+## B.4.
+
+4, 3, 1, 8, 9, 2, 6, 7, 5
+
+## C.1.
+
+Person opening the door is a knave, the other a knight.
+
+## C.2.
+
+Person opening the door is a knight, the other a knave.
+
+## C.3.
+
+Both are knights.
+
+## C.4.
+
+Unknown what the person opening the door is, but the other is a knight.
+
+## D.1.
+
+First trial: tiger in room 1, chocolate in room 2.
+
+Second trial: tiger in room 1, chocolate in room 2.
+
+Third trial: chocolate in both rooms.
+
+## D.2.
+
+Chocolate in room 7.
