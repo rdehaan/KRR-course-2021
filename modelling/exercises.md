@@ -121,6 +121,24 @@ Take a variant of the [job shop scheduling](https://en.wikipedia.org/wiki/Job_sh
 
 Take a variant of the [open shop scheduling](https://en.wikipedia.org/wiki/Open-shop_scheduling) problem, and find solutions of minimum [makespan](https://en.wikipedia.org/wiki/Makespan).
 
+## D.
+
+### D.1. Selecting a subgraph while maintaining reachability
+
+*Input:* an undirect graph *G = (V,E)*, several pairs *(v<sub>1</sub>,u<sub>1</sub>),...,(v<sub>n</sub>,u<sub>n</sub>)* of vertices, and a positive integer *k*.
+
+*Solutions:* subgraphs *G'* consisting of *V* and exactly *k* edges of *E* such that for each pair *(v<sub>i</sub>,u<sub>i</sub>)* it holds that *u<sub>i</sub>* is reachable from *v<sub>i</sub>* in *G'*.
+
+*Note:* this exercise involves using a (recursively defined) predicate to keep track of reachability in the subgraph *G'*.
+
+### D.2. Combinatorial auctions
+
+*Input:* a set *I* of items, and a set of bids, each consisting of a subset *J &subseteq; I* of items and a profit *p* (a positive integer). (The bids are offers for selling the items in *J* together for profit *p*.)
+
+*Solutions:* a subset of bids that are mutually consistent (that is, bids involving separate subsets of items) that lead to a maximum combined profit.
+
+*Note:* this exercise involves using the aggregate `#sum` as well as an optimization statement.
+
 <!--
 ## Problems related to games
 - chess position legal after k moves
@@ -138,6 +156,8 @@ Take a variant of the [open shop scheduling](https://en.wikipedia.org/wiki/Open-
 - bounded-size CFG consistent with pos. and neg. words
 
 ## Other problems
+- Rural postman / Chinese postman
 - X3C
 - Set cover
+- Abstract argumentation: conflict-free, admissible, complete, stable -- https://en.wikipedia.org/wiki/Argumentation_framework
 -->
