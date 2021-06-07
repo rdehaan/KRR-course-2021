@@ -1,6 +1,6 @@
 # Homework assignment 1
 
-## Exercise 1: Finding small FSAs
+## Exercise 1 (3pt): Finding small FSAs
 
 In this exercise, you will model the following problem in answer set programming.
 The goal is to find a small finite-state automaton that matches some data points.
@@ -30,50 +30,10 @@ In your answer, include the following:
 - Describe what rules/constraints/statements you add to the program *P*, and (intuitively) what function each has.
 - Describe why (optimal) answer sets correspond to solutions for the problem, and how to construct a solution from a given (optimal) answer set.
 
-## Exercise 2: Adding #even/#odd statements to the language
-
-In this exercise, you will show how adding (hypothetical) language constructs about the parity of sets does not increase the expressivity of the language of answer set programming.
-
-In particular, consider the following hypothetical language constructs `#even` and `#odd`. Both are to be followed by a set of literals, and are true if and only if the number of literals in this set that is true is even or odd, respectively. For the sake of simplicity, you may assume that statements with these hypothetical constructs `#even` and `#odd` only appear in the body (i.e., the right-hand side) of rules.
-
-For example, the following (hypothetical) answer set program would have an answer set:
-```
-num(1..10).
-a(1..4).
-#show a/1.
-
-:- not #even { a(X) : a(X), num(X) }.
-```
-And the following (hypothetical) answer set program would not have an answer set:
-```
-num(1..10).
-a(1..3).
-#show a/1.
-
-:- not #even { a(X) : a(X), num(X) }.
-```
-
-#### Assignment (a):
-Show how to translate any answer set program *P* that uses these hypothetical statements with `#even` and `#odd` to an equivalent answer set program *P'* (that is, *P* and *P'* have exactly the same answer sets when restricted to the predicates that appear in *P*) **with** aggregates.
-
-#### Assignment (b):
-Show how to translate any answer set program *P* that uses these hypothetical statements with `#even` and `#odd` to an equivalent answer set program *P'* (that is, *P* and *P'* have exactly the same answer sets when restricted to the predicates that appear in *P*) **without** using aggregates&mdash;only using normal rules (you may use first-order variables).
-
-#### Note:
-For both assignments (a) and (b), you may show concretely how the translation can be done for the following answer set program *P<sub>0</sub>* (for different values of the constant `t`), and then explain how your solution for *P<sub>0</sub>* can be used (in modified form) to translate arbitrary answer set programs with `#even` and `#odd` (in the body of rules) to equivalent programs without these statements.
-```
-#const t=10.
-num(1..t).
-{ a(X) : num(X) }.
-#show a/1.
-
-:- not #even { a(X) : a(X), num(X) }.
-```
-
 #### Note:
 When translating *P* to *P'*, you may introduce additional predicates. The equivalence between *P* and *P'* is measured only with respect to the predicates appearing in *P*. In other words, if we were to add (both to *P* and *P'*) a `#show` statement for each predicate appearing in *P*, clingo would show exactly the same answer sets.
 
-## Exercise 3: Modelling road repair scheduling
+## Exercise 2 (6pt): Modelling road repair scheduling
 
 In this exercise, you will show how to model the following problem in answer set programming.
 The general goal is to find a schedule of repairs for a network of roads in as little as possible time.
@@ -99,7 +59,7 @@ The task is to find a schedule for the repairs&mdash;i.e., which repairs should 
 - for each day, the total amount of tools needed (for each type of tool) for the repairs scheduled on that day is less than or equal to the total amount of tools available (of that type), and
 - the overall amount of days after which all repairs are done is minimal.
 
-#### Assignment (a):
+#### Assignment (a; 1pt):
 
 Give a precise specification of the problem input.
 How would you model the input data? What predicates would you use to represent
@@ -108,7 +68,7 @@ this in ASP, and how do you construct the facts over these predicates?
 Give an example of an instance with at least 10 roads that form a single connected graph, at least 5 repair requests of different durations that require different sets of tools, and at least 3 different tools.
 Also give the ASP encoding of this example problem input.
 
-#### Assignment (b):
+#### Assignment (b; 2pt):
 
 Describe how you would model and solve the basic problem (as described above) in ASP.
 
@@ -116,7 +76,7 @@ Explain clearly what predicates you use, what rules and constraints you add to t
 
 Also, explain clearly why (optimal) answer sets of your program correspond to solutions for the problem.
 
-#### Assignment (c):
+#### Assignment (c; 1pt):
 
 In this assignment, you will show how to modify the ASP encoding that you constructed for assignments (a) and (b) to include the following additional constraint.
 
@@ -124,7 +84,7 @@ The additional constraint is that on each day, each intersection must be reachab
 
 Explain clearly what you will modify in and add to your previous program, and why the (optimal) answer sets for the new program correspond to the problem with this additional constraint.
 
-#### Assignment (d):
+#### Assignment (d; 2pt):
 
 In this assignment, you will show how to modify the ASP encoding that you constructed for assignments (a)&ndash;(c) to include the following additional constraint.
 
@@ -139,6 +99,7 @@ The repair schedule should be such that on each day, there must be a [network fl
 
 Again, explain clearly what you will modify in and add to your previous program, and why the (optimal) answer sets for the new program correspond to the problem with this additional constraint.
 
+<!--
 #### Assignment (e):
 
 In this assignment, you will show how to modify the ASP encoding that you constructed for assignments (a)&ndash;(d) to include the following additional constraint.
@@ -151,3 +112,41 @@ In the input, you are given in addition an intersection *h* (which indicates the
 The repair schedule should be such that on each day, the *i* inspectors each can make a cycle of length at most *l* from *h* to *h* (different inspectors are allowed to make different cycles), such that on each day all roads that are being repaired are visited by at least one inspector. (An inspector visits a road under reparation by visiting one of the two intersections next to that road.)
 
 Again, explain clearly what you will modify in and add to your previous program, and why the (optimal) answer sets for the new program correspond to the problem with this additional constraint.
+-->
+
+## Exercise 3 (bonus, 1pt): Adding #even/#odd statements to the language
+
+In this exercise, you will show how adding (hypothetical) language constructs about the parity of sets does not increase the expressivity of the language of answer set programming.
+
+In particular, consider the following hypothetical language constructs `#even` and `#odd`. Both are to be followed by a set of literals, and are true if and only if the number of literals in this set that is true is even or odd, respectively. For the sake of simplicity, you may assume that statements with these hypothetical constructs `#even` and `#odd` only appear in the body (i.e., the right-hand side) of rules.
+
+For example, the following (hypothetical) answer set program would have an answer set:
+```
+num(1..10).
+a(1..4).
+#show a/1.
+
+:- not #even { a(X) : a(X), num(X) }.
+```
+And the following (hypothetical) answer set program would not have an answer set:
+```
+num(1..10).
+a(1..3).
+#show a/1.
+
+:- not #even { a(X) : a(X), num(X) }.
+```
+
+#### Assignment:
+Show how to translate any answer set program *P* that uses these hypothetical statements with `#even` and `#odd` to an equivalent answer set program *P'* (that is, *P* and *P'* have exactly the same answer sets when restricted to the predicates that appear in *P*) **without** using aggregates&mdash;only using normal rules (you may use first-order variables).
+
+#### Note:
+You may show concretely how the translation can be done for the following answer set program *P<sub>0</sub>* (for different values of the constant `t`), and then explain how your solution for *P<sub>0</sub>* can be used (in modified form) to translate arbitrary answer set programs with `#even` and `#odd` (in the body of rules) to equivalent programs without these statements.
+```
+#const t=10.
+num(1..t).
+{ a(X) : num(X) }.
+#show a/1.
+
+:- not #even { a(X) : a(X), num(X) }.
+```
