@@ -147,7 +147,7 @@ Take a variant of the [open shop scheduling](https://en.wikipedia.org/wiki/Open-
 
 *Note 1:* this exercise involves an optimization statement.
 
-*Note 2:* an [example solution](example solutions/shortest-task-schedule.lp) for this exercise is available.
+*Note 2:* an [example solution](./example%20solutions/shortest-task-schedule.lp) for this exercise is available.
 
 <!--
 ## Problems related to games
