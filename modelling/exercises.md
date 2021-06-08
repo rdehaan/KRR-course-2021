@@ -139,6 +139,14 @@ Take a variant of the [open shop scheduling](https://en.wikipedia.org/wiki/Open-
 
 *Note:* this exercise involves using the aggregate `#sum` as well as an optimization statement.
 
+### D.3. Shortest task schedule
+
+*Input:* a set *T* of tasks to perform, a positive integer *k* describing how many tasks per day can be done, and a set *P = {(t<sub>1</sub>,i<sub>1</sub>),...,(t<sub>m</sub>,i<sub>m</sub>)}* of pairs stating that task *t<sub>j</sub>* may not be done on day *i<sub>j</sub>*.
+
+*Solutions:* a schedule of minimum length (i.e., a minimum number of days) for which tasks to do on which day, so that for each pair *(t<sub>j</sub>,i<sub>j</sub>) &in; P* it holds that task *t<sub>j</sub>* is done on a different day than day *i<sub>j</sub>*.
+
+*Note:* this exercise involves an optimization statement.
+
 <!--
 ## Problems related to games
 - chess position legal after k moves
