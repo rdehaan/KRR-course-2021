@@ -145,7 +145,9 @@ Take a variant of the [open shop scheduling](https://en.wikipedia.org/wiki/Open-
 
 *Solutions:* a schedule of minimum length (i.e., a minimum number of days) for which tasks to do on which day, so that for each pair *(t<sub>j</sub>,i<sub>j</sub>) &in; P* it holds that task *t<sub>j</sub>* is done on a different day than day *i<sub>j</sub>*.
 
-*Note:* this exercise involves an optimization statement.
+*Note 1:* this exercise involves an optimization statement.
+
+*Note 2:* an [example solution](example solutions/shortest-task-schedule.lp) for this exercise is available.
 
 <!--
 ## Problems related to games
