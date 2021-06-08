@@ -30,9 +30,6 @@ In your answer, include the following:
 - Describe what rules/constraints/statements you add to the program *P*, and (intuitively) what function each has.
 - Describe why (optimal) answer sets correspond to solutions for the problem, and how to construct a solution from a given (optimal) answer set.
 
-#### Note:
-When translating *P* to *P'*, you may introduce additional predicates. The equivalence between *P* and *P'* is measured only with respect to the predicates appearing in *P*. In other words, if we were to add (both to *P* and *P'*) a `#show` statement for each predicate appearing in *P*, clingo would show exactly the same answer sets.
-
 ## Exercise 2 (6pt): Modelling road repair scheduling
 
 In this exercise, you will show how to model the following problem in answer set programming.
@@ -150,3 +147,6 @@ num(1..t).
 
 :- not #even { a(X) : a(X), num(X) }.
 ```
+
+#### Note:
+When translating *P* to *P'*, you may introduce additional predicates. The equivalence between *P* and *P'* is measured only with respect to the predicates appearing in *P*. In other words, if we were to add (both to *P* and *P'*) a `#show` statement for each predicate appearing in *P*, clingo would show exactly the same answer sets.
