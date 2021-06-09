@@ -16,7 +16,7 @@ A (finite) word *w* over the alphabet *&Sigma;*, consisting of the symbols *&sig
 If a word *w* is not accepted by *A*, we say that it is rejected by *A*.
 
 The problem is now as follows.
-The input consists of a positive integer *k* and a set of tuples *(w,o)* where *w* is a finite word over the alphabet *&Sigma;* and *o &in; \{ 0,1 \}*.
+The input consists of a positive integer *k* and a set of tuples *(w,o)* where *w* is a (nonempty) finite word over the alphabet *&Sigma;* and *o &in; \{ 0,1 \}*.
 Each tuple *(w,o)* in this set is a data point.
 The task is to find an NFA *A* with at most *k* states (i.e., *|Q| &leq; k*) such that for each tuple *(w,o)* in the data set, it holds that *A* accepts the word *w* if *o = 1* and *A* rejects the word *w* if *o = 0*.
 If such an automaton *A* of size at most *k* exists, output such an automaton *A* **of minimum size**. If no such automaton *A* of size at most *k* exists, output "None."
