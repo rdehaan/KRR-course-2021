@@ -89,7 +89,7 @@ In this assignment, you will show how to modify the ASP encoding that you constr
 
 The additional constraint for this assignment is the following.
 In the input, you are given some additional data:
-- For each road (and each direction on two-way roads), you are given a capacity: some positive integer that indicates how much traffic can pass on this road (e.g., 2 units of traffic per time unit).
+- For each road (and each direction on two-way roads), you are given a capacity: some positive integer that indicates how much traffic can pass on this road (e.g., 2 units of traffic per day).
 - Some traffic flow requirements (one per day), consisting of:
   - A starting intersection *s*, a finish intersection *t*, and a total flow amount *a* (a nonnegative integer).
 The repair schedule should be such that on each day, there must be a [network flow](https://en.wikipedia.org/wiki/Maximum_flow_problem#Definition) possible from *s* (for that day) to *t* (for that day) with a value *a* of flow, that uses only roads that are not being repaired that day.
