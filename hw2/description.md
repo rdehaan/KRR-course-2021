@@ -4,8 +4,11 @@ In this assignment, you will program several algorithms related to BombKnightSud
 
 The homework assignment consists of several parts (a)&ndash;(d).
 You get 1 point for free.
-Assignments (a)&ndash;(c) are worth 2 points each.
-Assignment (d) is worth 3 points (or you may opt to solve an easier variant for a maximum of 2 points).
+Assignment (a) is worth 3 points.
+Assignment (b) is worth 1 bonus point.
+Assignment (c) is worth 4 points.
+Assignment (d) is worth 2 points (or you may opt to solve an easier variant for a maximum of 1 points).
+Your grade will be the amount of points you get, with a maximum of 10.0.
 
 ## BombKnightSudoku's
 
