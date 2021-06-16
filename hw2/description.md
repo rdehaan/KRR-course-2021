@@ -10,6 +10,11 @@ Assignment (c) is worth 4 points.
 Assignment (d) is worth 2 points (or you may opt to solve an easier variant for a maximum of 1 points).
 Your grade will be the amount of points you get, with a maximum of 10.0.
 
+## Python notebook
+
+A Python notebook is available [on Canvas](https://canvas.uva.nl/files/4958498/download?download_frd=1) with some skeleton code.
+Use this notebook to submit your solutions.
+
 ## BombKnightSudoku's
 
 Here follows a description of *inputs* and *solutions* for BombKnightSudoku's.
