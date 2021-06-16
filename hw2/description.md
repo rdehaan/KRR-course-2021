@@ -14,6 +14,7 @@ Your grade will be the amount of points you get, with a maximum of 10.0.
 
 A Python notebook is available [on Canvas](https://canvas.uva.nl/files/4958498/download?download_frd=1) with some skeleton code.
 Use this notebook to submit your solutions.
+For more instructions for submission, see the [assignment on Canvas](https://canvas.uva.nl/courses/21424/assignments/247527).
 
 ## BombKnightSudoku's
 
