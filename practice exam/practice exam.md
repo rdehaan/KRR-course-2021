@@ -163,10 +163,12 @@ color(red;green;blue).
 :- edge(N,M), hidden_coloring(N,C), hidden_coloring(M,C).
 :- hidden_coloring(N,C), coloring(N,D), C != D.
 
+%%%
 %%% FINISH PROGRAM:
 %%% - use saturation to express the requirement
 %%%   that there is no other proper 3-coloring of the graph
 %%%   extending the coloring expressed by coloring/2.
+%%%
 
 % Show the nodes, edges, and partial coloring
 #show node/1.
