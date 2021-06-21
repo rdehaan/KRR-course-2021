@@ -24,7 +24,6 @@ We will do (roughly) the following in the four weeks:
   - Advanced problem modelling and solving
   - Homework assignment (programming)
 - Week 4:
-  - Some additional theoretical aspects of ASP
   - Preparing for the final exam
   - The final exam
 
@@ -46,8 +45,8 @@ This is the schedule of lectures, together with the topics of the lectures. All 
   - Tuesday June 15, 11:00–13:00: *Advanced ASP technique: saturation*
   - Thursday June 17, 13:00–15:00: *Q&A session*
 - Week 4:
-  - Monday June 21, 11:00–13:00: *TBA*
-  - Tuesday June 22, 11:00–13:00: *TBA*
+  - Monday June 21, 11:00–13:00: *Q&A session*
+  - Tuesday June 22, 11:00–13:00: *Outlook: connections to some other topics*
   - Wednesday June 23, 13:00–15:00: *Q&A session*
 
 
