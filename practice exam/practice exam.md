@@ -130,7 +130,8 @@ of moves. That is:
 
 Write an answer set program *P* that starts with declaring two constants: `n` and `k`,
 and whose answer sets correspond to all undirected graphs *G* with exactly `n` vertices that have exactly `k` connected components.
-A connected component of a graph is a subset of vertices that are all reachable from each other by following edges. (So a vertex without any edges connected to it is a connected component on its own.)
+A connected component of a graph is a subset of vertices that are all reachable from each other by following edges, and which is connected to no additional vertices in the rest of the graph.
+(So a vertex without any edges connected to it is a connected component on its own.)
 
 Explain how your program works. That is:
 1. explain what the different lines in the answer set program do, and
