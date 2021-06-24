@@ -145,7 +145,7 @@ Explain how your program works. That is:
 For this question, you will finish the following answer set program that has as answer sets all (partially) colored graphs (using 3 colors: red, green and blue) with exactly `n=4` vertices for which there is a unique way to extend the partial coloring to a full proper coloring of the graph.
 
 To illustrate this, take the following example graph *G* with vertices *1,2,3,4,5*,
-and edges *{1,2}*, *{1,3}*, *{2,4}*, *{2,5}*, and the partial coloring that colors *1* red, *4* green and *5* red (and doesn't color vertices *2* and *3*). The only way to extend this partial coloring to a full proper 3-coloring of the graph (that is, where nodes connected by an edge get a different color) is to color *2* blue and to color *3* green.
+and edges *{1,2}*, *{1,3}*, *{2,3}*, *{2,4}*, *{2,5}*, and the partial coloring that colors *1* red, *4* green and *5* red (and doesn't color vertices *2* and *3*). The only way to extend this partial coloring to a full proper 3-coloring of the graph (that is, where nodes connected by an edge get a different color) is to color *2* blue and to color *3* green.
 
 This is the program that you should finish:
 ```
